@@ -31,7 +31,7 @@ const url       = config.get('endpoint') + config.get('wallet');
         if ( hashrate < threshold ) {
             exec(command);
         } else {
-            check();
+            setTimeout(check, 3000);
         }
 
     });
