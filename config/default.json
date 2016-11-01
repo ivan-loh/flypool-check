@@ -1,0 +1,7 @@
+{
+    "worker" : "",
+    "threshold": 0,
+    "command" : "reboot",
+    "endpoint": "http://zcash.flypool.org/api/miner_new/",
+    "wallet": ""
+}
