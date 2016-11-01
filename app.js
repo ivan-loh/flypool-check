@@ -18,7 +18,7 @@ const url       = config.get('endpoint') + config.get('wallet');
  * loooop
  **/
 
-(function check() {
+function check() {
     
     request(url, (err, response, body) => {
 
@@ -36,4 +36,7 @@ const url       = config.get('endpoint') + config.get('wallet');
 
     });
     
-}());
+}
+
+// delayed start
+setTimeout(check, 60 * 1000 * 10);
